@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uzair Developer | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        secondary: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            300: '#cbd5e1',
+                            400: '#94a3b8',
+                            500: '#64748b',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/css">
+        .material-icons {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+</head>
+<body class="font-sans bg-white dark:bg-secondary-900 text-secondary-800 dark:text-secondary-100 transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white dark:bg-secondary-900 shadow-md dark:shadow-secondary-800/20">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-primary-600 dark:text-primary-400">
+                <span class="material-icons align-middle mr-1">code</span>
+                uzairdeveloper223
+            </a>
+            <div class="flex items-center space-x-4">
+                <a href="#about" class="hidden md:block hover:text-primary-600 dark:hover:text-primary-400 transition-colors">About</a>
+                <a href="#projects" class="hidden md:block hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Projects</a>
+                <a href="#tech" class="hidden md:block hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Tech Stack</a>
+                <a href="#mission" class="hidden md:block hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Mission</a>
+                <a href="#contact" class="hidden md:block hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Contact</a>
+                <button id="theme-toggle" class="p-2 rounded-full hover:bg-secondary-100 dark:hover:bg-secondary-800 transition-colors">
+                    <span class="material-icons dark:hidden">dark_mode</span>
+                    <span class="material-icons hidden dark:block">light_mode</span>
+                </button>
+                <button id="mobile-menu-button" class="md:hidden p-2 rounded-full hover:bg-secondary-100 dark:hover:bg-secondary-800 transition-colors">
+                    <span class="material-icons">menu</span>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white dark:bg-secondary-900 shadow-md">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-2">
+                <a href="#about" class="py-2 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">About</a>
+                <a href="#projects" class="py-2 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Projects</a>
+                <a href="#tech" class="py-2 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Tech Stack</a>
+                <a href="#mission" class="py-2 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Mission</a>
+                <a href="#contact" class="py-2 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="py-20 bg-gradient-to-br from-primary-50 to-white dark:from-secondary-900 dark:to-secondary-800">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4 text-secondary-900 dark:text-white">
+                        Assalamu Alaikum! <br>
+                        I'm <span class="text-primary-600 dark:text-primary-400">Uzair</span>
+                    </h1>
+                    <p class="text-lg mb-6 text-secondary-700 dark:text-secondary-300">
+                        A passionate backend developer from Azad Jammu & Kashmir, dedicated to creating impactful software, finding bugs, and sharing Islamic knowledge through technology.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#contact" class="inline-flex items-center px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-colors shadow-lg hover:shadow-xl">
+                            <span class="material-icons mr-2">email</span>
+                            Contact Me
+                        </a>
+                        <a href="https://uzair.ct.ws/" class="inline-flex items-center px-6 py-3 bg-white dark:bg-secondary-800 hover:bg-secondary-100 dark:hover:bg-secondary-700 text-secondary-900 dark:text-white rounded-lg transition-colors shadow-lg hover:shadow-xl">
+                            <span class="material-icons mr-2">work</span>
+                            I don't work right now
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80">
+                        <div class="absolute inset-0 bg-primary-600 dark:bg-primary-500 rounded-full opacity-10 animate-pulse"></div>
+                        <div class="absolute inset-4 bg-primary-500 dark:bg-primary-400 rounded-full opacity-20"></div>
+                        <div class="absolute inset-8 bg-white dark:bg-secondary-800 rounded-full shadow-xl flex items-center justify-center">
+                            <span class="material-icons text-9xl text-primary-500 dark:text-primary-400">person</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Links -->
+    <section class="py-8 bg-white dark:bg-secondary-900">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="https://instagram.com/mughal_x22" target="_blank" class="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 text-white hover:shadow-lg transition-shadow">
+                    <span class="material-icons">photo_camera</span>
+                </a>
+                <a href="https://github.com/uzairdeveloper223" target="_blank" class="flex items-center justify-center w-12 h-12 rounded-full bg-secondary-800 dark:bg-secondary-700 text-white hover:shadow-lg transition-shadow">
+                    <span class="material-icons">code</span>
+                </a>
+                <a href="https://youtube.com/@mughal_x22" target="_blank" class="flex items-center justify-center w-12 h-12 rounded-full bg-red-600 text-white hover:shadow-lg transition-shadow">
+                    <span class="material-icons">play_arrow</span>
+                </a>
+                <a href="https://telegram.org/@LEGENDxUZAIR" target="_blank" class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-500 text-white hover:shadow-lg transition-shadow">
+                    <span class="material-icons">send</span>
+                </a>
+                <a href="https://twitter.com/@uzairxdev223" target="_blank" class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-400 text-white hover:shadow-lg transition-shadow">
+                    <span class="material-icons">alternate_email</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-secondary-50 dark:bg-secondary-800">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 text-secondary-900 dark:text-white">Featured Projects</h2>
+                <p class="text-secondary-700 dark:text-secondary-300 max-w-2xl mx-auto">
+                    Here are some of the projects I've been working on. Each one represents my passion for coding and Islamic knowledge.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white dark:bg-secondary-900 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 flex flex-col">
+                    <div class="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mb-6">
+                        <span class="material-icons text-3xl text-green-600 dark:text-green-400">menu_book</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-secondary-900 dark:text-white">Noor-e-Quran</h3>
+                    <p class="text-secondary-700 dark:text-secondary-400 mb-4 flex-grow">
+                        A digital Quran application with translations, tafsir, and audio recitations to help Muslims connect with the Holy Book.
+                    </p>
+                    <a href="https://uzairdeveloper223.github.io/noor-e-quran/" class="inline-flex items-center text-primary-600 dark:text-primary-400 hover:underline">
+                        View Project
+                        <span class="material-icons ml-1 text-sm">arrow_forward</span>
+                    </a>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-white dark:bg-secondary-900 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 flex flex-col">
+                    <div class="w-16 h-16 bg-red-100 dark:bg-red-900 rounded-lg flex items-center justify-center mb-6">
+                        <span class="material-icons text-3xl text-red-600 dark:text-red-400">local_fire_department</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-secondary-900 dark:text-white">FireGram</h3>
+                    <p class="text-secondary-700 dark:text-secondary-400 mb-4 flex-grow">
+                        A social media platform built with Firebase that focuses on sharing positive and ethical content.
+                    </p>
+                    <a href="https://firegram.rf.gd" class="inline-flex items-center text-primary-600 dark:text-primary-400 hover:underline">
+                        View Project
+                        <span class="material-icons ml-1 text-sm">arrow_forward</span>
+                    </a>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-white dark:bg-secondary-900 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 flex flex-col">
+                    <div class="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mb-6">
+                        <span class="material-icons text-3xl text-blue-600 dark:text-blue-400">spellcheck</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-secondary-900 dark:text-white">WordWise</h3>
+                    <p class="text-secondary-700 dark:text-secondary-400 mb-4 flex-grow">
+                        A vocabulary building application that helps users improve their language skills through daily practice.
+                    </p>
+                    <a href="https://uzair.ct.ws/wordwise.html" class="inline-flex items-center text-primary-600 dark:text-primary-400 hover:underline">
+                        View Project
+                        <span class="material-icons ml-1 text-sm">arrow_forward</span>
+                    </a>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="bg-white dark:bg-secondary-900 rounded-xl shadow-lg hover:shadow-xl transition-shadow p-6 flex flex-col">
+                    <div class="w-16 h-16 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center mb-6">
+                        <span class="material-icons text-3xl text-purple-600 dark:text-purple-400">article</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-secondary-900 dark:text-white">Personal Blog</h3>
+                    <p class="text-secondary-700 dark:text-secondary-400 mb-4 flex-grow">
+                        A platform where I share my thoughts on technology, Islam, and ethical hacking with the community.
+                    </p>
+                    <a href="https://for-myuse.infinityfreeapp.com" class="inline-flex items-center text-primary-600 dark:text-primary-400 hover:underline">
+                        View Project
+                        <span class="material-icons ml-1 text-sm">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech" class="py-20 bg-white dark:bg-secondary-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 text-secondary-900 dark:text-white">Tech Stack</h2>
+                <p class="text-secondary-700 dark:text-secondary-300 max-w-2xl mx-auto">
+                    These are the technologies and tools I work with to bring ideas to life.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+                <!-- JavaScript -->
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 bg-yellow-100 dark:bg-yellow-900 rounded-lg flex items-center justify-center mb-3">
+                        <span class="material-icons text-3xl text-yellow-600 dark:text-yellow-400">javascript</span>
+                    </div>
+                    <span class="font-medium text-secondary-900 dark:text-white">JavaScript</span>
+                </div>
+                
+                <!-- Python -->
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mb-3">
+                        <span class="material-icons text-3xl text-blue-600 dark:text-blue-400">code</span>
+                    </div>
+                    <span class="font-medium text-secondary-900 dark:text-white">Python</span>
+                </div>
+                
+                <!-- Bash -->
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mb-3">
+                        <span class="material-icons text-3xl text-green-600 dark:text-green-400">terminal</span>
+                    </div>
+                    <span class="font-medium text-secondary-900 dark:text-white">Bash</span>
+                </div>
+                
+                <!-- Java -->
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 bg-red-100 dark:bg-red-900 rounded-lg flex items-center justify-center mb-3">
+                        <span class="material-icons text-3xl text-red-600 dark:text-red-400">coffee</span>
+                    </div>
+                    <span class="font-medium text-secondary-900 dark:text-white">Java</span>
+                </div>
+                
+                <!-- Rust -->
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 bg-orange-100 dark:bg-orange-900 rounded-lg flex items-center justify-center mb-3">
+                        <span class="material-icons text-3xl text-orange-600 dark:text-orange-400">build</span>
+                    </div>
+                    <span class="font-medium text-secondary-900 dark:text-white">Rust</span>
+                </div>
+                
+                <!-- Firebase -->
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 bg-amber-100 dark:bg-amber-900 rounded-lg flex items-center justify-center mb-3">
+                        <span class="material-icons text-3xl text-amber-600 dark:text-amber-400">local_fire_department</span>
+                    </div>
+                    <span class="font-medium text-secondary-900 dark:text-white">Firebase</span>
+                </div>
+                
+                <!-- Termux -->
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center mb-3">
+                        <span class="material-icons text-3xl text-purple-600 dark:text-purple-400">smartphone</span>
+                    </div>
+                    <span class="font-medium text-secondary-900 dark:text-white">Termux</span>
+                </div>
+                
+                <!-- Sketchware Pro -->
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 bg-teal-100 dark:bg-teal-900 rounded-lg flex items-center justify-center mb-3">
+                        <span class="material-icons text-3xl text-teal-600 dark:text-teal-400">brush</span>
+                    </div>
+                    <span class="font-medium text-secondary-900 dark:text-white">Sketchware Pro</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="py-20 bg-primary-50 dark:bg-primary-900/20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6 text-secondary-900 dark:text-white">My Mission</h2>
+                <div class="text-lg text-secondary-700 dark:text-secondary-300 space-y-4">
+                    <p>
+                        My mission is to leverage technology to spread knowledge and promote Islamic teachings in the digital age. I believe that technology should be used for the betterment of humanity and to bring people closer to their faith.
+                    </p>
+                    <p>
+                        Through my work, I aim to create tools and applications that make Islamic knowledge more accessible, help people in their daily lives, and foster a community of ethical technologists who use their skills for positive impact.
+                    </p>
+                    <p>
+                        I'm committed to open source development, sharing knowledge freely, and mentoring others who wish to use technology for good causes.
+                    </p>
+                </div>
+                <div class="mt-8">
+                    <a href="#contact" class="inline-flex items-center px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-colors shadow-lg hover:shadow-xl">
+                        <span class="material-icons mr-2">handshake</span>
+                        Join My Mission
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white dark:bg-secondary-900">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold mb-4 text-secondary-900 dark:text-white">Get In Touch</h2>
+      <p class="text-secondary-700 dark:text-secondary-300 max-w-2xl mx-auto">
+        Have a question or want to collaborate? Feel free to reach out to me using the form below.
+      </p>
+    </div>
+    <div class="max-w-3xl mx-auto">
+      <form action="https://formsubmit.co/uzairxdev223@gmail.com" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Anti-spam hidden field -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="box">
+        <input type="hidden" name="_autoresponse" value="Thank you for reaching out! I will get back to you soon.">
+
+        <div class="space-y-2">
+          <label for="name" class="block text-sm font-medium text-secondary-700 dark:text-secondary-300">Name</label>
+          <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg border border-secondary-300 dark:border-secondary-700 bg-white dark:bg-secondary-800 text-secondary-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 transition-colors" placeholder="Your name">
+        </div>
+        <div class="space-y-2">
+          <label for="email" class="block text-sm font-medium text-secondary-700 dark:text-secondary-300">Email</label>
+          <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-secondary-300 dark:border-secondary-700 bg-white dark:bg-secondary-800 text-secondary-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 transition-colors" placeholder="your@email.com">
+        </div>
+        <div class="space-y-2 md:col-span-2">
+          <label for="subject" class="block text-sm font-medium text-secondary-700 dark:text-secondary-300">Subject</label>
+          <input type="text" id="subject" name="subject" required class="w-full px-4 py-3 rounded-lg border border-secondary-300 dark:border-secondary-700 bg-white dark:bg-secondary-800 text-secondary-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 transition-colors" placeholder="Subject of your message">
+        </div>
+        <div class="space-y-2 md:col-span-2">
+          <label for="message" class="block text-sm font-medium text-secondary-700 dark:text-secondary-300">Message</label>
+          <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 rounded-lg border border-secondary-300 dark:border-secondary-700 bg-white dark:bg-secondary-800 text-secondary-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 transition-colors" placeholder="Your message..."></textarea>
+        </div>
+        <div class="md:col-span-2">
+          <button type="submit" class="w-full md:w-auto px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-colors shadow-lg hover:shadow-xl flex items-center justify-center">
+            <span class="material-icons mr-2">send</span>
+            Send Message
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+    <!-- Footer -->
+    <footer class="py-10 bg-secondary-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="https://uzair.ct.ws/" class="text-xl font-bold text-primary-400">
+                        <span class="material-icons align-middle mr-1">code</span>
+                        uzairdeveloper223
+                    </a>
+                    <p class="mt-2 text-secondary-400">
+                        Backend Developer | Bug Locator | Islamic Content Creator
+                    </p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#about" class="hover:text-primary-400 transition-colors">About</a>
+                    <a href="#projects" class="hover:text-primary-400 transition-colors">Projects</a>
+                    <a href="#tech" class="hover:text-primary-400 transition-colors">Tech Stack</a>
+                    <a href="#mission" class="hover:text-primary-400 transition-colors">Mission</a>
+                    <a href="#contact" class="hover:text-primary-400 transition-colors">Contact</a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-secondary-800 text-center text-secondary-400">
+                <p>&copy; 2023 Uzair Developer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Dark Mode Toggle and Mobile Menu -->
+    <script>
+        // Dark Mode Toggle
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+        
+        // Check for saved theme preference or use system preference
+        if (localStorage.getItem('theme') === 'dark' || 
+            (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            htmlElement.classList.add('dark');
+        } else {
+            htmlElement.classList.remove('dark');
+        }
+        
+        // Toggle theme on button click
+        themeToggleBtn.addEventListener('click', () => {
+            htmlElement.classList.toggle('dark');
+            
+            // Save preference to localStorage
+            if (htmlElement.classList.contains('dark')) {
+                localStorage.setItem('theme', 'dark');
+            } else {
+                localStorage.setItem('theme', 'light');
+            }
+        });
+        
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
